@@ -1,21 +1,15 @@
-import {
-  Card,
-  CardBody,
-  HStack,
-  Skeleton,
-  SkeletonText,
-} from '@chakra-ui/react';
+import { Box, HStack, Text, Skeleton, SkeletonText } from '@chakra-ui/react';
 
 const GenreSkeleton = () => {
   return (
-    <Card marginY="5px">
+    <Box marginY="5px" width="100%">
       <HStack>
-        <Skeleton borderRadius={8} width="32px" />
-        <CardBody>
-          <SkeletonText />
-        </CardBody>
+        <Skeleton borderRadius={8} height="32px" width="32px" />
+        <SkeletonText width="100%">
+          <Text>Hello</Text>
+        </SkeletonText>
       </HStack>
-    </Card>
+    </Box>
   );
 };
 
