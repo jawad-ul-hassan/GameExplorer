@@ -1,5 +1,5 @@
 import meh from '../assets/meh.webp';
-import bullsEye from '../assets/bulls-eye.webp';
+import bullsEye from '../assets/bulls-eye.png';
 import thumbsUp from '../assets/thumbs-up.webp';
 import { Image, ImageProps } from '@chakra-ui/react';
 
@@ -17,18 +17,18 @@ const Emoji = ({ rating }: Props) => {
     4: {
       src: thumbsUp,
       alt: 'recommended',
-      boxSize: '25px',
+      boxSize: '20px',
     },
     5: {
       src: bullsEye,
       alt: 'Exceptional',
-      boxSize: '35px',
+      boxSize: '25px',
     },
   };
 
   if (rating < 3) return null;
 
-  return <Image {...emojiMap[rating]} marginTop={3} marginLeft="auto" />;
+  return <Image {...emojiMap[rating]} marginTop={3} />;
 };
 
 export default Emoji;
