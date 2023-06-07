@@ -15,7 +15,7 @@ export const routes = createBrowserRouter([
         element: <HomePage />,
       },
       {
-        path: '/games/:id',
+        path: '/games/:slug',
         element: <GameDetailPage />,
       },
     ],
