@@ -18,7 +18,7 @@ const ExpandableText = ({ children }: Props) => {
   }
 
   return (
-    <Text lineHeight="8">
+    <Text>
       {summary}
       <Button
         size="sm"

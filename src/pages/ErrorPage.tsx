@@ -14,8 +14,7 @@ const ErrorPage = () => {
         alignItems="center"
         flexDirection="column"
         rowGap="25px"
-        paddingX={5}
-        paddingY={3}
+        padding={3}
       >
         <Heading fontSize="7xl">Oops!</Heading>
         <Text fontSize="2xl">

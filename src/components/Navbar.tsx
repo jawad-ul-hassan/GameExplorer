@@ -8,8 +8,7 @@ const Navbar = () => {
   return (
     <Box
       boxShadow="rgba(99, 99, 99, 0.2) 0px 2px 8px 0px"
-      paddingX={5}
-      paddingY={3}
+      padding={3}
       marginBottom={8}
       display="flex"
       justifyContent="space-between"

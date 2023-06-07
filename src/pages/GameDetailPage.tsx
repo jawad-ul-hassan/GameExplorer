@@ -26,8 +26,7 @@ const GameDetailPage = () => {
 
   return (
     <SimpleGrid
-      paddingX={5}
-      paddingY={3}
+      padding={3}
       columns={{
         base: 1,
         md: 2,
