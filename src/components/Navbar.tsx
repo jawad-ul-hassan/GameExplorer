@@ -1,27 +1,35 @@
-import { HStack, Image } from '@chakra-ui/react';
+import { Box, Image } from '@chakra-ui/react';
 import logo from '../assets/logo.png';
 import ColorModeSwitch from './ColorModeSwitch';
 import SearchInput from './SearchInput';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
-    <HStack
+    <Box
       boxShadow="rgba(99, 99, 99, 0.2) 0px 2px 8px 0px"
       paddingX={5}
       paddingY={3}
       marginBottom={8}
-      spacing={5}
+      display="flex"
+      justifyContent="space-between"
+      alignItems="center"
+      columnGap="15px"
     >
-      <Image
-        src={logo}
-        boxSize={{
-          base: '40px',
-          md: '50px',
-        }}
-      />
-      <SearchInput />
+      <Link to="/">
+        <Image
+          src={logo}
+          boxSize={{
+            base: '40px',
+            md: '50px',
+          }}
+        />
+      </Link>
+      <Box flex="1">
+        <SearchInput />
+      </Box>
       <ColorModeSwitch />
-    </HStack>
+    </Box>
   );
 };
 
